@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./app.js" defer></script>
+</head>
+<body>
+    <div>
+        <div id="checkbox-div">
+            <input type="checkbox" name="nsfw">
+            <label for="nsfw">nsfw</label>
+
+            <input type="checkbox" name="religious">
+            <label for="religious">religious</label>
+
+            <input type="checkbox" name="political">
+            <label for="political">political</label>
+
+            <input type="checkbox" name="racist">
+            <label for="racist">racist</label>
+
+            <input type="checkbox" name="sexist">
+            <label for="sexist">sexist</label>
+
+            <input type="checkbox" name="explicit">
+            <label for="explicit">explicit</label>
+        </div>
+
+        <label for="category">category</label>
+        <select name="category" id="category-sel">
+            <option value="any">any</option>
+            <option value="programming">programming</option>
+            <option value="misc">misc</option>
+            <option value="dark">dark</option>
+            <option value="pun">pun</option>
+            <option value="spooky">spooky</option>
+            <option value="christmas">christmas</option>
+        </select>
+    </div>
+    <button id="joke-btn">GET JOKE</button>
+    <div id="joke">
+        <p id="joke-setup"></p>
+        <p id="joke-punchline"></p>
+    </div>
+</body>
+</html>
