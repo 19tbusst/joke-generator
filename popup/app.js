@@ -13,8 +13,6 @@ const options = {
 	}
 };
 
-console.log(process.env)
-
 let blacklistFlags = ["nsfw", "religious", "political", "racist", "sexist", "explicit"];
 checkboxDiv.childNodes.forEach((child) => {
 	child.addEventListener("click", () => {
