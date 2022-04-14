@@ -33,6 +33,7 @@ async function getJoke() {
 
 jokeBtn.addEventListener("click", () => {
 	getJoke().then((joke) => {
+		document.querySelector("hr").style.display = "block";
 		if (joke.type === "twopart") {
 			jokeSetup.textContent = joke.setup;
 			jokePunchline.textContent = joke.delivery;
